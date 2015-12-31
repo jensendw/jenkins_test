@@ -13,7 +13,7 @@ File.open('changelog').each do |line|
 end
 
 paths.uniq.each do |path|
-  if File.exists? (path)
+  if File.exists?(path)
     puts "Changes found for directory #{path}"
     puts "Running make all inside #{path}"
     Dir.chdir(path) do
